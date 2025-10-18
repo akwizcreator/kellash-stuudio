@@ -30,10 +30,27 @@
   <!-- Hero Section -->
   <section class="hero">
       <h1>KARIBU KELLASH STUDIO</h1>
-      <p>Tunahakikisha website yako inafaa kwenye kila device.</p>
+      <p></p>
       <a href="services.html" class="btn">Tazama Huduma Zetu</a>
   </section>
+  <center>
+<div class="cardyanyimbo">
+    <!-- Picha ya track -->
+    <img src="daino album.jpg" alt="Track 1 Cover" class="track-img" />
 
+    <!-- Jina la track -->
+    <h3>Nyimbo 1</h3>
+
+    <!-- Audio Player -->
+    <audio controls>
+        <source src="daino mp3.mp3" type="audio/mpeg" width="20px"/>
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Download Button -->
+    <a href="audio/track1.mp3" download="Nyimbo1" class="btn">Download</a>
+</div>
+</center>
   <!-- Services Section -->
   <section class="services">
       <h2>Huduma Zetu</h2>
@@ -58,16 +75,18 @@
       <p>&copy; 2021-2025 KELLASH STUDIO. All rights reserved.</p>
   </footer>
 
-  <!-- Burger JS -->
+<!-- ✅ JavaScript -->
   <script>
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
 
     burger.addEventListener('click', () => {
-        nav.classList.toggle('nav-active');
-        burger.classList.toggle('toggle');
+      // Toggle both burger and nav visibility
+      nav.classList.toggle('nav-active');
+      burger.classList.toggle('toggle');
     });
   </script>
+
 
 </body>
 </html>
